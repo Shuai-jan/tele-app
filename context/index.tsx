@@ -17,8 +17,8 @@ if (!projectId) {
 
 // Set up metadata
 const metadata = { //this is optional
-  name: "appkit-example",
-  description: "AppKit Example - EVM",
+  name: "Tele-App",
+  description: "Telegram mini application bot assist",
   url: "https://reown-appkit-evm.vercel.app", // origin must match your domain & subdomain
   icons: ["https://avatars.githubusercontent.com/u/179229932"]
 }

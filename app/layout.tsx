@@ -8,8 +8,8 @@ import { headers } from "next/headers"; // added
 import ContextProvider from '@/context'
 
 export const metadata: Metadata = {
-  title: "AppKit Example App",
-  description: "Powered by Reown"
+  title: "Tele-App",
+  description: "Telegram Mini Applicationt Bot assist"
 };
 
 export default function RootLayout({
