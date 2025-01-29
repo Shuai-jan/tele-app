@@ -3,24 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 69, 84, 176;
-  --background-end-rgb: 27, 33, 69;
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 244, 245, 253;
+  --primary-rgb: 69, 84, 176;
+  --secondary-rgb: 27, 33, 69;
 }
 
 body {
-  background-color: #f4f5fd;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 @layer utilities {
+  .container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
   @media (max-width: 600px) {
     .grid {
       width: 100%;
       flex-direction: column;
     }
   }
-  ,
+
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm;
+  }
+  
+  .card-header {
+    @apply text-sm font-semibold bg-gray-100 p-2 text-center;
+  }
+  
+  .card-body {
+    @apply flex justify-center items-center p-4;
   }
 }
